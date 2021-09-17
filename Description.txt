@@ -41,7 +41,18 @@ Dawn 	https://github.com/iamCode/Dawn
 	-> important: I used local variant's of GL.h and GLU.h during debuging and so I had to change GLee.h (line 58) and SDL_opengl.h (line 46, 47)
 	-> copy libogg-0.dll, libpng15-15.dll, libvorbis-0.dll, libvorbisfile-3.dll, lua.dll, SDL.dll, SDL_image.dll, SDL_mixer.dll, zlib.dll, zlib1.dll to Dawn
 
-lua			
+lua	5.1.5	https://www.lua.org/ftp/lua-5.1.5.tar.gz	
+	-> follow this video https://www.youtube.com/watch?v=TALXtup2CjI to build the lua.lib and lua.dll
+	-> use all the files out of lua/include
+
+tolua++ https://github.com/LuaDist/toluapp
+	-> generate the solution with cmake, use lua.lib, lua/include and lua.exe from lua 5.1.5 during the process
+	-> build toluapp_lib as static library
+	-> use Mult-threaded DLL (/MD)
+	-> change the Target Extension to .lib
+	-> rename the .lib to tolua++.lib
+	-> use tolua++.h out of include
+
 https://sourceforge.net/projects/luabinaries/files/
 https://www.youtube.com/watch?v=TALXtup2CjI
 https://www.youtube.com/watch?v=xrLQ0OXfjaI
