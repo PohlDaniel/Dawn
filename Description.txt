@@ -1,0 +1,49 @@
+freetype 2.4.4	https://sourceforge.net/projects/freetype/files/freetype2/2.4.4/
+	-> use solution out of builds/win32/vc2008
+	-> build freetype as static library
+	-> use Multi-threaded DLL (/MD) insteed of Multi-threaded (/MT)
+	-> rename the library to freetype.lib
+	-> use include as it is
+	
+SDL  1.2	https://github.com/libsdl-org/SDL-1.2/tree/release-1.2.15
+	-> use solution of VisualC
+	-> get SDL_config.h out of https://libsdl.org/release/SDL-devel-1.2.15-VC.zip and copy it to SDL/include
+	-> build SDL and SDLmain
+				
+				
+SDL_mixer 1.2	https://libsdl.org/projects/SDL_mixer/release/SDL_mixer-1.2.12.zip
+	-> use solution of VisualC
+	-> copy the files out of SDL/include to SDL_mixer/VisualC/eternal/inlcude
+	-> copy the built SDL.lib to SDL_mixer/VisualC/eternal/lib/x86
+	-> add the external/include folder to the projects "native_midi" and "timidity"
+	-> add the library path SDL_mixer/VisualC/eternal/lib/x86 to the project "SDL_mixer"
+	-> build SDL_mixer
+
+SDL_image 1.2	https://www.libsdl.org/projects/SDL_image/release/SDL_image-1.2.12.zip
+	-> use solution of VisualC
+	-> copy the files out of SDL/include to SDL_image/VisualC/eternal/inlcude
+	-> copy the built SDL.lib to SDL_image/VisualC/eternal/lib/x86
+	-> add the library path SDL_mixer/VisualC/eternal/lib/x86 to the project "SDL_image"
+	-> build SDL_image
+
+zlib 1.2.11		https://zlib.net/
+	-> create solution with cmake
+	-> build zlib
+	-> use zlib.lib and zlib.dll
+	-> use zconf.h and zlib.h for including in other project's
+
+Dawn 	https://github.com/iamCode/Dawn		
+	-> copy freetype, lua, SDL, zlib includes to Dawn include
+	-> copy SDL.lib, SDLmain.lib, SDL_image.lib, SDL_mixer.lib, freetype.lib, zlib.lib, lua.lib, tolua++.lib to Dawn/lib
+	-> build the porject 01Cube out of the Cube.sln
+	-> copy the built SDL.dll, SDL_image.dll, SDL_mixer.dll and zlib.dll to Cube/build/bin
+	-> copy the zlib1.dll, libjpeg-8.dll, libpng15-15.dll out of SDL_image/VisualC/external/lib/x86 to Cube/build/bin
+	-> important: I used local variant's of GL.h and GLU.h during debuging and so I had to change GLee.h (line 58) and SDL_opengl.h (line 46, 47)
+	-> copy libogg-0.dll, libpng15-15.dll, libvorbis-0.dll, libvorbisfile-3.dll, lua.dll, SDL.dll, SDL_image.dll, SDL_mixer.dll, zlib.dll, zlib1.dll to Dawn
+
+lua			
+https://sourceforge.net/projects/luabinaries/files/
+https://www.youtube.com/watch?v=TALXtup2CjI
+https://www.youtube.com/watch?v=xrLQ0OXfjaI
+
+https://github.com/badforlabor/tolua tolua++.lib

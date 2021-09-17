@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\actionbar.cpp" />
+    <ClCompile Include="src\a_star.cpp" />
+    <ClCompile Include="src\buffwindow.cpp" />
+    <ClCompile Include="src\callindirection.cpp" />
+    <ClCompile Include="src\camerafocushandler.cpp" />
+    <ClCompile Include="src\character.cpp" />
+    <ClCompile Include="src\characterinfoscreen.cpp" />
+    <ClCompile Include="src\commonsounds.cpp" />
+    <ClCompile Include="src\configurableframe.cpp" />
+    <ClCompile Include="src\configuration.cpp" />
+    <ClCompile Include="src\configuredframes.cpp" />
+    <ClCompile Include="src\controlelement.cpp" />
+    <ClCompile Include="src\dawnstate.cpp" />
+    <ClCompile Include="src\debug.cpp" />
+    <ClCompile Include="src\editor.cpp" />
+    <ClCompile Include="src\elements.cpp" />
+    <ClCompile Include="src\fontcache.cpp" />
+    <ClCompile Include="src\frames.cpp" />
+    <ClCompile Include="src\framesbase.cpp" />
+    <ClCompile Include="src\gameloophandler.cpp" />
+    <ClCompile Include="src\GLee\GLee.cpp" />
+    <ClCompile Include="src\GLFT_Font.cpp" />
+    <ClCompile Include="src\globals.cpp" />
+    <ClCompile Include="src\groundloot.cpp" />
+    <ClCompile Include="src\interactionpoint.cpp" />
+    <ClCompile Include="src\interactionregion.cpp" />
+    <ClCompile Include="src\interface.cpp" />
+    <ClCompile Include="src\inventory.cpp" />
+    <ClCompile Include="src\inventoryscreen.cpp" />
+    <ClCompile Include="src\item.cpp" />
+    <ClCompile Include="src\loadingscreen.cpp" />
+    <ClCompile Include="src\logwindow.cpp" />
+    <ClCompile Include="src\luafunctions.cpp" />
+    <ClCompile Include="src\luainterfacegenerated.cpp" />
+    <ClCompile Include="src\magic.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\message.cpp" />
+    <ClCompile Include="src\musiccache.cpp" />
+    <ClCompile Include="src\npc.cpp" />
+    <ClCompile Include="src\optionswindow.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="src\pnglite\pnglite.c" />
+    <ClCompile Include="src\quest.cpp" />
+    <ClCompile Include="src\questwindow.cpp" />
+    <ClCompile Include="src\random.cpp" />
+    <ClCompile Include="src\resolution.cpp" />
+    <ClCompile Include="src\shop.cpp" />
+    <ClCompile Include="src\soundengine.cpp" />
+    <ClCompile Include="src\spell.cpp" />
+    <ClCompile Include="src\spellbook.cpp" />
+    <ClCompile Include="src\statssystem.cpp" />
+    <ClCompile Include="src\testinterface.cpp" />
+    <ClCompile Include="src\texture.cpp" />
+    <ClCompile Include="src\textwindow.cpp" />
+    <ClCompile Include="src\threadObject\EventClass.cpp" />
+    <ClCompile Include="src\threadObject\MutexClass.cpp" />
+    <ClCompile Include="src\threadObject\Thread.cpp" />
+    <ClCompile Include="src\tileset.cpp" />
+    <ClCompile Include="src\tooltip.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+    <ClCompile Include="src\zone.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\actionbar.h" />
+    <ClInclude Include="src\a_star.h" />
+    <ClInclude Include="src\buffwindow.h" />
+    <ClInclude Include="src\callindirection.h" />
+    <ClInclude Include="src\camerafocushandler.h" />
+    <ClInclude Include="src\character.h" />
+    <ClInclude Include="src\characterinfoscreen.h" />
+    <ClInclude Include="src\commonsounds.h" />
+    <ClInclude Include="src\configurableframe.h" />
+    <ClInclude Include="src\configuration.h" />
+    <ClInclude Include="src\configuredframes.h" />
+    <ClInclude Include="src\controlelement.h" />
+    <ClInclude Include="src\dawnstate.h" />
+    <ClInclude Include="src\debug.h" />
+    <ClInclude Include="src\direction.h" />
+    <ClInclude Include="src\drawinghelpers.h" />
+    <ClInclude Include="src\editor.h" />
+    <ClInclude Include="src\elements.h" />
+    <ClInclude Include="src\fontcache.h" />
+    <ClInclude Include="src\frames.h" />
+    <ClInclude Include="src\framesbase.h" />
+    <ClInclude Include="src\gameloophandler.h" />
+    <ClInclude Include="src\GLee\GLee.h" />
+    <ClInclude Include="src\GLFT_Font.h" />
+    <ClInclude Include="src\globals.h" />
+    <ClInclude Include="src\groundloot.h" />
+    <ClInclude Include="src\interactionpoint.h" />
+    <ClInclude Include="src\interactionregion.h" />
+    <ClInclude Include="src\interface.h" />
+    <ClInclude Include="src\inventory.h" />
+    <ClInclude Include="src\inventoryscreen.h" />
+    <ClInclude Include="src\item.h" />
+    <ClInclude Include="src\loadingscreen.h" />
+    <ClInclude Include="src\logwindow.h" />
+    <ClInclude Include="src\luafunctions.h" />
+    <ClInclude Include="src\luainterface.h" />
+    <ClInclude Include="src\luainterfacegenerated.h" />
+    <ClInclude Include="src\magic.h" />
+    <ClInclude Include="src\message.h" />
+    <ClInclude Include="src\musiccache.h" />
+    <ClInclude Include="src\npc.h" />
+    <ClInclude Include="src\optionswindow.h" />
+    <ClInclude Include="src\player.h" />
+    <ClInclude Include="src\pnglite\pnglite.h" />
+    <ClInclude Include="src\quest.h" />
+    <ClInclude Include="src\questwindow.h" />
+    <ClInclude Include="src\random.h" />
+    <ClInclude Include="src\resolution.h" />
+    <ClInclude Include="src\shop.h" />
+    <ClInclude Include="src\soundengine.h" />
+    <ClInclude Include="src\spell.h" />
+    <ClInclude Include="src\spellbook.h" />
+    <ClInclude Include="src\stats.h" />
+    <ClInclude Include="src\statssystem.h" />
+    <ClInclude Include="src\testinterface.h" />
+    <ClInclude Include="src\texture.h" />
+    <ClInclude Include="src\textureframe.h" />
+    <ClInclude Include="src\textwindow.h" />
+    <ClInclude Include="src\threadObject\EventClass.h" />
+    <ClInclude Include="src\threadObject\MutexClass.h" />
+    <ClInclude Include="src\threadObject\Thread.h" />
+    <ClInclude Include="src\tileset.h" />
+    <ClInclude Include="src\timeconverterhelper.h" />
+    <ClInclude Include="src\tooltip.h" />
+    <ClInclude Include="src\utils.h" />
+    <ClInclude Include="src\zone.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{18755744-4CB6-459F-9D50-21D9CA4B243F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Dawn</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_WIN32;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\GLee;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\lua\include;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\freetype\include;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\SDL\include;src\threadObject;src\pnglite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\SDL\lib;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\lua;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\freetype\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua.lib;freetype.lib;SDL.lib;SDL_image.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\GLee;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\lua\include;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\freetype\include;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\SDL\include;src\threadObject;src\pnglite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\SDL\lib;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\lua;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\freetype\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua.lib;freetype.lib;SDL.lib;SDL_image.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_NO_VA_START_VALIDATION;NOMINMAX;__WIN32__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\include\lua;..\include\OpenGL;..\include\freetype;..\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua.lib;tolua++.lib;freetype.lib;SDL.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;zlib.lib;OpenGL32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src\GLee;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\lua\include;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\freetype\include;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\SDL\include;src\threadObject;src\pnglite;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\SDL\lib;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\lua;C:\CProjects\Engines\2D Engine\Dawn-master\Dawn\freetype\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>lua.lib;freetype.lib;SDL.lib;SDL_image.lib;SDL_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
