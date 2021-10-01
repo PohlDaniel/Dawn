@@ -1,7 +1,7 @@
 # Dawn
 
 This repository contains a new setup of https://github.com/iamCode/Dawn.
-I added the needed SDL, Freetype, LUA, Tolua++ and zLib dependencies and also wrote a small description on how to build it on windows.
+I added the needed SDL, Freetype, LUA, Toluapp(Tolua++) and zLib dependencies and also wrote a small description on how to build it on windows.
 By my own I used Visual Studio 2015.
 
 It should be clear that the Copyright of Dawn and of all dependencies not in my hand.
