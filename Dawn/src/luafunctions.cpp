@@ -37,7 +37,7 @@ namespace LuaFunctions
 	static const luaL_reg lualibs[] = {
 		{ "",     luaopen_base },
 		{ "io",   luaopen_io },
-		{ "DawnInterface", tolua_CLuaInterface_open },
+		{ "DawnInterface", tolua_LuaInterface_open },
 		{ NULL,         NULL }
 	};
 

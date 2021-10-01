@@ -32,29 +32,29 @@ zlib 1.2.11		https://zlib.net/
 	-> use zlib.lib and zlib.dll
 	-> use zconf.h and zlib.h for including in other project's
 
-Dawn 	https://github.com/iamCode/Dawn		
-	-> copy freetype, lua, SDL, zlib includes to Dawn include
-	-> copy SDL.lib, SDLmain.lib, SDL_image.lib, SDL_mixer.lib, freetype.lib, zlib.lib, lua.lib, tolua++.lib to Dawn/lib
-	-> build the porject 01Cube out of the Cube.sln
-	-> copy the built SDL.dll, SDL_image.dll, SDL_mixer.dll and zlib.dll to Cube/build/bin
-	-> copy the zlib1.dll, libjpeg-8.dll, libpng15-15.dll out of SDL_image/VisualC/external/lib/x86 to Cube/build/bin
-	-> important: I used local variant's of GL.h and GLU.h during debuging and so I had to change GLee.h (line 58) and SDL_opengl.h (line 46, 47)
-	-> copy libogg-0.dll, libpng15-15.dll, libvorbis-0.dll, libvorbisfile-3.dll, lua.dll, SDL.dll, SDL_image.dll, SDL_mixer.dll, zlib.dll, zlib1.dll to Dawn
-
 lua	5.1.5	https://www.lua.org/ftp/lua-5.1.5.tar.gz	
 	-> follow this video https://www.youtube.com/watch?v=TALXtup2CjI to build the lua.lib and lua.dll
 	-> use all the files out of lua/include
 
-tolua++ https://github.com/LuaDist/toluapp
+toluapp(tolua++) https://github.com/LuaDist/toluapp
 	-> generate the solution with cmake, use lua.lib, lua/include and lua.exe from lua 5.1.5 during the process
 	-> build toluapp_lib as static library
 	-> use Mult-threaded DLL (/MD)
 	-> change the Target Extension to .lib
-	-> rename the .lib to tolua++.lib
 	-> use tolua++.h out of include
 
+Dawn 	https://github.com/iamCode/Dawn		
+	-> copy freetype, lua, SDL, zlib includes to Dawn include
+	-> copy SDL.lib, SDLmain.lib, SDL_image.lib, SDL_mixer.lib, freetype.lib, zlib.lib, lua.lib, toluapp.lib to Dawn/lib	
+	-> important: I used local variant's of GL.h and GLU.h during debuging and so I had to change GLee.h (line 58) and SDL_opengl.h (line 46, 47)
+	-> copy libogg-0.dll, libpng15-15.dll, libvorbis-0.dll, libvorbisfile-3.dll, lua.dll, SDL.dll, SDL_image.dll, SDL_mixer.dll, zlib.dll, zlib1.dll to Dawn
+	-> build the porject Dawn out of the Dawn.sln use "Release" and "x86"
+	
+Generate luainterface
+	-> build toluapp out of toluapp.sln
+	-> open cmd change to the directory Dawn/lib and execute "toluapp.exe -o luainterfacegenerated.cpp -H luainterfacegenerated.h luainterface.pkg"
+	-> the built lua.dll from lua 5.1.5 is neccessary
+	
 https://sourceforge.net/projects/luabinaries/files/
 https://www.youtube.com/watch?v=TALXtup2CjI
 https://www.youtube.com/watch?v=xrLQ0OXfjaI
-
-https://github.com/badforlabor/tolua tolua++.lib
