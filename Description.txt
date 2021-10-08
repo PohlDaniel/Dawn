@@ -52,7 +52,7 @@ Dawn 	https://github.com/iamCode/Dawn
 	
 Generate luainterface
 	-> build toluapp out of toluapp.sln
-	-> open cmd change to the directory Dawn/lib and execute "toluapp.exe -o luainterfacegenerated.cpp -H luainterfacegenerated.h luainterface.pkg"
+	-> open cmd change to the directory Dawn/scripts and execute "toluapp.exe -o luainterfacegenerated.cpp -H luainterfacegenerated.h luainterface.pkg"
 	-> the built lua.dll from lua 5.1.5 is neccessary
 	
 https://sourceforge.net/projects/luabinaries/files/
